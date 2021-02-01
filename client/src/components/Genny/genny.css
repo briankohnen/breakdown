@@ -1,0 +1,40 @@
+.lander {
+    width: 100vw;
+    display: block;
+}
+.lander>h1 {
+    padding-top: 5vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    height: 20vh;
+}
+h1>span{
+    color: rgb(130, 247, 106);
+}
+.tutSpacer {
+    margin-top: 15vh;
+}
+.fadeout {
+    display: none;
+}
+.tutSpacer>p {
+    text-align: center;
+    font-size: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    color: rgba(130, 247, 106, 0.748);
+}
+.results {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .tutSpacer>p {
+        font-size: 1.5rem;
+    }
+}
