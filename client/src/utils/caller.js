@@ -10,6 +10,7 @@ export default {
             method: "POST",
             url: "/lastfmgrab"
         }).then(res => {
+            console.log(res);
             const lfmk = res.data;
             return axios.request({
                 method: 'GET',
