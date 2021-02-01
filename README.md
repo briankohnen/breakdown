@@ -3,7 +3,8 @@ Search your favorite music artist/band to find a breakdown of their genres, top 
 
 ## Technologies used:
 * Chart.js
-* Spotify Web API
+* Spotify API
+* LastFM API
 
 
 ## Starting the app locally
