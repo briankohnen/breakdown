@@ -2,7 +2,7 @@ import axios from "axios";
 import _sift from './sifter';
 require('dotenv').config();
 
-const apiBase = 'http://ws.audioscrobbler.com/2.0/';
+const apiBase = 'https://ws.audioscrobbler.com/2.0/';
 
 export default {
     searchArtist: (artist) => {
