@@ -1,8 +1,6 @@
 const SpotifyWebApi = require('spotify-web-api-node');
 require('dotenv').config();
 
-console.log(process.env);
-
 const spotify = new SpotifyWebApi({
     clientId: process.env.clientId,
     clientSecret: process.env.clientSecret,
@@ -20,8 +18,6 @@ module.exports = function (app) {
     };
 
     const getRecoms = (artist_id, genres, response) => {
-
-        console.log(artist_id, genres);
 
         spotify.getRecommendations({
             seed_artists: [artist_id],
@@ -119,11 +115,14 @@ module.exports = function (app) {
 
     app.post('/recommendations', (request, response) => {
 
-        console.log(request.body);
-
         cleanedResponse.recommendations = [];
 
         getRecoms(request.body.artist, request.body.genres, response);
 
     });
+
+    app.post('/lastfmgrab', (request, response) => {
+        response.send(process.env.lfmk);
+    });
+
 };

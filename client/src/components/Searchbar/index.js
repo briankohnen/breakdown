@@ -19,8 +19,6 @@ class Searchbar extends Component {
 
             _axios.searchArtist(this.state.toSearch.trim()).then(res => {
 
-                console.log(res);
-
                 if (!res.data.message) {
 
                     this.props.handleGlobalState('topGenres', []);

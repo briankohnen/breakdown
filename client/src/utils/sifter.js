@@ -1,7 +1,3 @@
-import axios from "axios";
-// import caller from './caller';
-//https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?redirect_uri=http%253A%252F%252Fguardian.mashape.com%252Fcallback&q=tchami&index=25
-
 const sifter = {
     artist: '',
     genres: [],

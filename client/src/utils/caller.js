@@ -1,14 +1,20 @@
 import axios from "axios";
 import _sift from './sifter';
+require('dotenv').config();
 
 const apiBase = 'http://ws.audioscrobbler.com/2.0/';
-const apiKey = 'd8ddc0505406eddebd0641379e607c47';
 
 export default {
     searchArtist: (artist) => {
         return axios.request({
-            method: 'GET',
-            url: `${apiBase}?method=artist.gettoptags&artist=${artist}&api_key=${apiKey}&autocorrect=1&format=json`,
+            method: "POST",
+            url: "/lastfmgrab"
+        }).then(res => {
+            const lfmk = res.data;
+            return axios.request({
+                method: 'GET',
+                url: `${apiBase}?method=artist.gettoptags&artist=${artist}&${lfmk}&autocorrect=1&format=json`
+            });
         });
     },
     getTops: (artist, genres) => {
