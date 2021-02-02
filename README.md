@@ -1,5 +1,6 @@
 # breakdown.
 Search your favorite music artist/band to find a breakdown of their genres, top tracks, and recommended songs to check out.
+https://breakdown-app.herokuapp.com/
 
 ## Technologies used:
 * Chart.js
