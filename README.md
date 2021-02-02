@@ -24,3 +24,7 @@ After both installations complete, run the following command in your terminal:
 npm start
 ```
 
+## Future developments
+
+Hoping to find a source of data that can show an artist's popularity by region
+-> Display popularity "hotspots" on a map of the world
