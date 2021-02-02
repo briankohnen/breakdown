@@ -2,15 +2,10 @@
     width: 80vw;
     margin: 0 auto 25vh auto;
     position: relative;
+    -webkit-animation: loadin 700ms ease;
+    -moz-animation: loadin 700ms ease;
+    -o-animation: loadin 700ms ease;
     animation: loadin 700ms ease;
-}
-@keyframes loadin {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
 }
 .resultsLoader>div>h1 {
     padding-top: 5vh;
@@ -135,6 +130,9 @@ ul>li:hover {
     height: 25vh;
     background-size: cover;
     background-position-y: 25%;
+    -webkit-animation: loadin 1000ms ease;
+    -moz-animation: loadin 1000ms ease;
+    -o-animation: loadin 1000ms ease;
     animation: loadin 1000ms ease;
 }
 .textbackdrop>h1 {
@@ -194,6 +192,14 @@ span>a:visited {
 }
 .searchModal.show {
     transform: translateY(0);
+}
+@keyframes loadin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 @media screen and (min-width: 1000px) {
     .resultsLoader {
