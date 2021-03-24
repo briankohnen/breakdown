@@ -1,5 +1,6 @@
 # breakdown.
 Search your favorite music artist/band to find a breakdown of their genres, top tracks, and recommended songs to check out.
+https://breakdown-app.herokuapp.com/
 
 ## Technologies used:
 * Chart.js
@@ -23,3 +24,7 @@ After both installations complete, run the following command in your terminal:
 npm start
 ```
 
+## Future developments
+
+Hoping to find a source of data that can show an artist's popularity by region
+-> Display popularity "hotspots" on a map of the world
