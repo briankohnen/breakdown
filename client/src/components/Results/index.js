@@ -119,7 +119,6 @@ class Results extends Component {
                 </li>);
             }
         });
-        console.log(this.tempRecommendations);
         this.setState({recommendations: this.tempRecommendations});
 
     };
